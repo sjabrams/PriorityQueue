@@ -31,6 +31,9 @@ namespace PriorityQueue
         }
 
         public T Peak() {
+            if (this.IsEmpty()) {
+                return default(T);
+            }
             return list.ElementAt(0);
         }
 
